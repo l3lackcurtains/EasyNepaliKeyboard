@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="key_height">60dp</dimen>
+    <dimen name="candidate_font_height">22sp</dimen>
+    <dimen name="candidate_vertical_padding">16dp</dimen>
+</resources>

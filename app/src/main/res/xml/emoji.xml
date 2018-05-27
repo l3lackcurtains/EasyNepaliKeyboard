@@ -1,0 +1,38 @@
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="14.28%p"
+    android:keyHeight="8%p"
+    >
+
+    <Row>
+        <Key android:codes="128512" android:keyIcon="@drawable/emo_grin" android:keyOutputText="😀" android:keyEdgeFlags="left"  />
+        <Key android:codes="128513" android:keyIcon="@drawable/emo_grin_smile_eyes" android:keyOutputText="😁"/>
+        <Key android:codes="128514" android:keyIcon="@drawable/emo_joy" android:keyOutputText="😂"/>
+        <Key android:codes="128515" android:keyIcon="@drawable/emo_smile" android:keyOutputText="😃"/>
+        <Key android:codes="128516" android:keyIcon="@drawable/emo_open_mouth_smile_eye" android:keyOutputText="😄"/>
+        <Key android:codes="128517" android:keyIcon="@drawable/emo_sweat_smile" android:keyOutputText="😅"/>
+        <Key android:codes="128518" android:keyIcon="@drawable/emo_smile_shrink_eyes" android:keyOutputText="😆" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="128519" android:keyIcon="@drawable/emo_smile_halo" android:keyOutputText="😇" android:keyEdgeFlags="left"  />
+        <Key android:codes="128521" android:keyIcon="@drawable/emo_wink" android:keyOutputText="😉"/>
+        <Key android:codes="128522" android:keyIcon="@drawable/emo_smile_eyes" android:keyOutputText="😊"/>
+        <Key android:codes="128523" android:keyIcon="@drawable/emo_yum" android:keyOutputText="😋"/>
+        <Key android:codes="128524" android:keyIcon="@drawable/emo_relieved" android:keyOutputText="😌"/>
+        <Key android:codes="128525" android:keyIcon="@drawable/emo_heart_eyes" android:keyOutputText="😍" />
+        <Key android:codes="128526" android:keyIcon="@drawable/emo_sunglasses" android:keyOutputText="😎" android:keyEdgeFlags="right"  />
+    </Row>
+    <Row>
+        <Key android:codes="128527" android:keyIcon="@drawable/emo_smirk" android:keyOutputText="😏" android:keyEdgeFlags="left"  />
+        <Key android:codes="128528" android:keyIcon="@drawable/emo_neutral_face" android:keyOutputText="😐"/>
+        <Key android:codes="128529" android:keyIcon="@drawable/emo_expressionless" android:keyOutputText="😑"/>
+        <Key android:codes="128530" android:keyIcon="@drawable/emo_unamused" android:keyOutputText="😒"/>
+        <Key android:codes="128531" android:keyIcon="@drawable/emo_sweat" android:keyOutputText="😓"/>
+        <Key android:codes="128532" android:keyIcon="@drawable/emo_pensive" android:keyOutputText="😔"/>
+        <Key android:codes="128533" android:keyIcon="@drawable/emo_confused" android:keyOutputText="😕" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="15%p" android:isModifier="true" android:keyEdgeFlags="left"/>
+
+        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+    </Row>
+</Keyboard>

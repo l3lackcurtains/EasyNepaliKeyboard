@@ -1,49 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyHeight="8%p"
     android:keyWidth="10%p"
     android:horizontalGap="0px"
     android:verticalGap="0px"
-    android:keyHeight="60dp">
-    <Row android:rowEdgeFlags="top">
-        <Key
-            android:codes="64"
-            android:keyEdgeFlags="left"
-            android:keyLabel="@" />
-        <Key
-            android:codes="35"
-            android:keyLabel="#" />
-        <Key
-            android:codes="33"
-            android:keyLabel="!" />
-        <Key
-            android:codes="92"
-            android:keyLabel="\" />
-        <Key
-            android:codes="42"
-            android:keyLabel="*" />
-        <Key
-            android:codes="44"
-            android:keyLabel=","
-            android:keyWidth="10%p" />
-        <Key
-            android:codes="63"
-            android:keyLabel="?" />
-        <Key
-            android:codes="-22"
-            android:isModifier="true"
-            android:keyLabel="Eng"
-            android:keyWidth="20%p" />
-        <Key
-            android:codes="-100"
-            android:isModifier="true"
-            android:keyEdgeFlags="right"
-            android:keyIcon="@drawable/ic_action_action_help" />
-    </Row>
+    >
     <Row>
         <Key
             android:codes="113"
             android:keyEdgeFlags="left"
-            android:keyLabel="q" />
+            android:keyLabel="q"
+            android:popupCharacters="1" />
         <Key
             android:codes="119"
             android:keyLabel="w" />
@@ -73,6 +39,7 @@
             android:keyEdgeFlags="right"
             android:keyLabel="p" />
     </Row>
+
     <Row>
         <Key
             android:codes="97"
@@ -105,13 +72,14 @@
             android:keyEdgeFlags="right"
             android:keyLabel="l" />
     </Row>
+
     <Row>
         <Key
             android:codes="-1"
             android:isModifier="true"
             android:isSticky="true"
             android:keyEdgeFlags="left"
-            android:keyIcon="@drawable/sym_keyboard_shift_holo"
+            android:keyIcon="@drawable/sym_keyboard_shift"
             android:keyWidth="15%p" />
         <Key
             android:codes="122"
@@ -136,39 +104,42 @@
             android:keyLabel="m" />
         <Key
             android:codes="-5"
-            android:isModifier="true"
             android:isRepeatable="true"
             android:keyEdgeFlags="right"
-            android:keyIcon="@drawable/sym_keyboard_delete_holo"
+            android:keyIcon="@drawable/sym_keyboard_delete"
             android:keyWidth="15%p" />
     </Row>
+
     <Row android:rowEdgeFlags="bottom">
         <Key
             android:codes="-2"
             android:isModifier="true"
+            android:isSticky="true"
             android:keyEdgeFlags="left"
             android:keyLabel="123"
-            android:keyWidth="15%p" />
+            android:keyWidth="10%p" />
         <Key
-            android:codes="-7"
-            android:isModifier="true"
-            android:keyIcon="@drawable/icon_en_us"
-            android:keyWidth="15%p" />
+            android:codes="-101"
+            android:keyIcon="@drawable/sym_keyboard_emoji"
+            android:keyWidth="10%p" />
+        <Key
+            android:codes="-102"
+            android:keyIcon="@drawable/sym_keyboard_language_switch"
+            android:keyWidth="10%p" />
         <Key
             android:codes="32"
-            android:isRepeatable="false"
-            android:keyIcon="@drawable/sym_keyboard_space_holo"
-            android:keyWidth="40%p" />
+            android:isRepeatable="true"
+            android:keyIcon="@drawable/sym_keyboard_space"
+            android:keyWidth="45%p" />
         <Key
             android:codes="46"
-            android:isModifier="true"
+            android:isRepeatable="true"
             android:keyLabel="."
             android:keyWidth="10%p" />
         <Key
             android:codes="10"
-            android:isModifier="true"
             android:keyEdgeFlags="right"
-            android:keyIcon="@drawable/sym_keyboard_return_holo"
-            android:keyWidth="20%p" />
+            android:keyIcon="@drawable/sym_keyboard_return"
+            android:keyWidth="15%p" />
     </Row>
 </Keyboard>
