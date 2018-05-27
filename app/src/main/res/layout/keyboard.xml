@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <com.crumet.awesomekeyboard.CustomKeyboardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/keyboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/gradient_bg"
-        android:keyBackground="@drawable/key_bg"
-        android:keyPreviewLayout="@layout/preview"/>
+<com.crumet.awesomekeyboard.CustomKeyboardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/keyboard_background_holo"
+    android:keyBackground="@drawable/btn_keyboard_key_ics"
+    android:keyPreviewLayout="@layout/key_preview_ics"
+    android:keyTextColor="#fff"
+    android:soundEffectsEnabled="true" />

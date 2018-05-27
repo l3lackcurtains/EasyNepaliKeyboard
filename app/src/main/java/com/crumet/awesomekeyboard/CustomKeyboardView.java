@@ -1,5 +1,6 @@
 package com.crumet.awesomekeyboard;
 
+import android.graphics.drawable.Drawable;
 import android.inputmethodservice.KeyboardView;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -56,39 +57,12 @@ public class CustomKeyboardView extends KeyboardView {
     @Override
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        Paint paint = new Paint();
-        paint.setTextAlign(Paint.Align.CENTER);
-        paint.setTextSize(18);
-        paint.setColor(Color.LTGRAY);
-        int x = 30;
-        int y = 30;
         List<Key> keys = getKeyboard().getKeys();
         for (Key key : keys) {
+            Log.e("KEY", "Drawing key with code " + key.codes[0]);
+            if (key.codes[0] == -101) {
 
-            if (key.label != null) {
-                if (key.label.equals("q")) {
-                    canvas.drawText("1", key.x + (key.width - x), key.y + y, paint);
-                } else if (key.label.equals("w")) {
-                    canvas.drawText("2", key.x + (key.width - x), key.y + y, paint);
-                } else if (key.label.equals("e")) {
-                    canvas.drawText("3", key.x + (key.width - x), key.y + y, paint);
-                } else if (key.label.equals("r")) {
-                    canvas.drawText("4", key.x + (key.width - x), key.y + y, paint);
-                } else if (key.label.equals("t")) {
-                    canvas.drawText("5", key.x + (key.width - x), key.y + y, paint);
-                } else if (key.label.equals("y")) {
-                    canvas.drawText("5", key.x + (key.width - x), key.y + y, paint);
-                } else if (key.label.equals("u")) {
-                    canvas.drawText("6", key.x + (key.width - x), key.y + y, paint);
-                } else if (key.label.equals("i")) {
-                    canvas.drawText("7", key.x + (key.width - x), key.y + y, paint);
-                } else if (key.label.equals("o")) {
-                    canvas.drawText("8", key.x + (key.width - x), key.y + y, paint);
-                } else if (key.label.equals("p")) {
-                    canvas.drawText("9", key.x + (key.width - x), key.y + y, paint);
-                }
             }
-
         }
     }
 }
